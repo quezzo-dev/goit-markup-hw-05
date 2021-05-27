@@ -19,7 +19,9 @@
     <header class="header">
       <div class="container header-container">
         <nav class="nav">
-          <a href="./index.html" class="logo link"><span class="accent">Web</span>Studio</a>
+          <a href="./index.html" class="logo link"
+            ><span class="accent">Web</span>Studio</a
+          >
           <ul class="site-nav list">
             <li class="nav-item">
               <a class="nav-link link curent" href="./index.html">Студия</a>
@@ -59,7 +61,17 @@
     <main>
       <section class="hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero-btn" type="button">Заказать услугу</button>
+        <button class="hero-btn" type="button" data-modal-open>
+          Заказать услугу
+        </button>
+
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <div class="modal-cross" data-modal-close>
+              <img src="./images/cross.svg" width="11" alt="Крестик" />
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="about section">
@@ -75,7 +87,8 @@
 
               <h3 class="about-subtitle">Внимание к деталям</h3>
               <p class="about-description">
-                Идейные соображения, а также начало повседневной работы по формированию позиции.
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
               </p>
             </li>
             <li class="about-list-item icon-clock">
@@ -86,7 +99,8 @@
               </div>
               <h3 class="about-subtitle">Пунктуальность</h3>
               <p class="about-description">
-                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
               </p>
             </li>
             <li class="about-list-item icon-diagram">
@@ -97,7 +111,8 @@
               </div>
               <h3 class="about-subtitle">Планирование</h3>
               <p class="about-description">
-                Равным образом консультация с широким активом в значительной степени обуславливает.
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
               </p>
             </li>
             <li class="about-list-item icon-astronaut">
@@ -108,7 +123,8 @@
               </div>
               <h3 class="about-subtitle">Современные технологии</h3>
               <p class="about-description">
-                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
               </p>
             </li>
           </ul>
@@ -120,17 +136,34 @@
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="our-work-list list">
             <li class="our-work-item">
-              <img src="./images/img1.jpg" width="370" alt="Человек работает за компьютером" />
+              <div class="our-overlay">
+                <img
+                  src="./images/img1.jpg"
+                  width="370"
+                  alt="Человек работает за компьютером"
+                />
+                <p>Десктопные приложения</p>
+              </div>
             </li>
             <li class="our-work-item">
-              <img
-                src="./images/img2.jpg"
-                width="370"
-                alt="Человек с телефон в руке работает за компьютером"
-              />
+              <div class="our-overlay">
+                <img
+                  src="./images/img2.jpg"
+                  width="370"
+                  alt="Человек с телефон в руке работает за компьютером"
+                />
+                <p>Мобильные приложения</p>
+              </div>
             </li>
             <li class="our-work-item">
-              <img src="./images//img3.jpg" width="370" alt="Человек держит в левой руке планшет" />
+              <div class="our-overlay">
+                <img
+                  src="./images//img3.jpg"
+                  width="370"
+                  alt="Человек держит в левой руке планшет"
+                />
+                <p>Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -141,7 +174,11 @@
           <h2 class="title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img src="./images/img4.jpg" width="270" alt="Фотография Игоря Демьяненка" />
+              <img
+                src="./images/img4.jpg"
+                width="270"
+                alt="Фотография Игоря Демьяненка"
+              />
               <div class="card-info">
                 <h3 class="team-subtitle">Игорь Демьяненко</h3>
                 <p class="team-description">Product Designer</p>
@@ -178,7 +215,11 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/img5.jpg" width="270" alt="Фотография Ольги Репиной" />
+              <img
+                src="./images/img5.jpg"
+                width="270"
+                alt="Фотография Ольги Репиной"
+              />
               <div class="card-info">
                 <h3 class="team-subtitle">Ольга Репина</h3>
                 <p class="team-description">Frontend Developer</p>
@@ -215,7 +256,11 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/img6.jpg" width="270" alt="Фотография Николая Тарасова" />
+              <img
+                src="./images/img6.jpg"
+                width="270"
+                alt="Фотография Николая Тарасова"
+              />
               <div class="card-info">
                 <h3 class="team-subtitle">Николай Тарасов</h3>
                 <p class="team-description">Marketing</p>
@@ -252,7 +297,11 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/img7.jpg" width="270" alt="Фотография Михаила Ермакова" />
+              <img
+                src="./images/img7.jpg"
+                width="270"
+                alt="Фотография Михаила Ермакова"
+              />
               <div class="card-info">
                 <h3 class="team-subtitle">Михаил Ермаков</h3>
                 <p class="team-description">UI Designer</p>
@@ -348,7 +397,9 @@
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-left-side">
-          <a href="./index.html" class="logo link"><span class="accent">Web</span>Studio</a>
+          <a href="./index.html" class="logo link"
+            ><span class="accent">Web</span>Studio</a
+          >
           <address class="address">
             <p class="office-address">г. Киев, пр-т Леси Украинки, 26</p>
             <ul class="contacts list">
@@ -358,7 +409,9 @@
                 >
               </li>
               <li class="contacts-item">
-                <a class="contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                <a class="contacts-link link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </address>
@@ -399,5 +452,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

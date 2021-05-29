@@ -379,7 +379,7 @@ svg {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.out .team {
+.team {
   background-color: var(--light-white-color);
 }
 
@@ -442,7 +442,7 @@ svg {
 .social-svg {
   width: 20px;
   height: 20px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-info {
